@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./Assests/logo.png">
+    <title>Spotify - Web Player: Music for everyone- </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href = "#">Search</a>
+                </div>
+            </div>
+
+
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option">
+                        <img src="./Assests/library_icon.png">
+                        <a href="#" id="lib">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">
+                            Create your first playlist
+                        </p>
+                        <p class="box-p2">
+                            It's easy, we'll help you
+                        </p>
+                        <button class="badge">
+                            Create playlist
+                        </button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">
+                            Let's find some podcasts to follow
+                        </p>
+                        <p class="box-p2">
+                           We'll keep you updated on new episodes
+                        </p>
+                        <button class="badge">
+                            Browse podcasts
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+              <div class="sticky-nav-icons">
+                <img src="./Assests/backward_icon.png" class="left">
+                <img src="./Assests/forward_icon.png" class="hide">
+              </div>
+              
+              <div class="sticky-nav-options">
+                <button class="badge nav-item hide" id="explore">Explore premium</button>
+                <button class="badge nav-item dark-badge" id="install"><i class="fa-regular fa-circle-down"></i> Install app</button>
+                <i class="fa-regular fa-user nav-item" id="icon"></i>
+              </div>
+            </div>
+            
+                <h2>Recently played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./Assests/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks...</p>
+                    </div>
+                </div>
+
+                <h2>Trending now near you</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./Assests/card2img.jpeg" class="card-img">
+                        <p class="card-title">Mahiye Jinna Sona</p>
+                        <p class="card-info">Darshan Raval</p>
+                    </div>
+                
+               
+                    <div class="card">
+                        <img src="./Assests/card7.jpeg" class="card-img">
+                        <p class="card-title">Sajni</p>
+                        <p class="card-info">Arijit Singh, Ram Sampath</p>
+                    </div>
+                
+                    <div class="card">
+                        <img src="./Assests/Screenshot_28-3-2025_25640_www.bing.com.jpeg" class="card-img" id="taylor">
+                        <p class="card-title">Lover</p>
+                        <p class="card-info">Tylor Swift, Shawn Mendes</p>
+                    </div>
+                    <div class="card">
+                        <img src="./Assests/card9.img.jpeg" class="card-img">
+                        <p class="card-title">Tum ho</p>
+                        <p class="card-info">Mohit Chauhan, Mithoon</p>
+                    </div>
+                
+                    <div class="card">
+                        <img src="./Assests/card12.jpeg" class="card-img">
+                        <p class="card-title">Tere hawale</p>
+                        <p class="card-info">Arijit Singh, Pritam, Shilpa Rao </p>
+                    </div>
+                </div>
+
+                <h2>Featured Charts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./Assests/card5img.jpeg" class="card-img">
+                        <p class="card-title">Top Songs Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks...</p>
+                    </div>
+                
+               
+                    <div class="card">
+                        <img src="./Assests/card6img.jpeg" class="card-img">
+                        <p class="card-title">Top Songs India</p>
+                        <p class="card-info">Your daily updates of the most played tracks...</p>
+                    </div>
+                
+                    <div class="card">
+                        <img src="./Assests/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks...</p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="line">
+                </div>
+        </div>
+        </div>
+        
+        <div class="music-player">
+
+            <div class="album">
+                <div class="poster">
+                    <img src="./Assests/album.jpeg">
+                </div>
+                <div class="singer">
+                    <span style="font-weight: 500;font-size: 0.8rem;" id="song">Rasiya from ("Brahmastra")</span><br>
+                    <span style="opacity:0.7; font-size: 0.7rem;" id="songinfo">Pritam, Shreya Ghoshal, Tushar Joshi</span>
+                </div>
+                <div class="add">
+                    <i class="fa-regular fa-heart" id="heart"></i>
+                    <i class="fa-solid fa-circle-plus"  id="addplus"></i>
+                    
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./Assests/player_icon1.png" class="player-control-icon">
+                    <img src="./Assests/player_icon2.png" class="player-control-icon">
+                    <img src="./Assests/player_icon3.png" class="player-control-icon" id="play"style="opacity: 1; height: 2.5rem;">
+                    <img src="./Assests/player_icon4.png" class="player-control-icon">
+                    <img src="./Assests/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="total-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="commands">
+                    <i class="fa-light fa-microphone-stand"></i>
+                </div>
+                <div class="control-right">
+                    <div class="inner-volume">
+                        <i class="fa-solid fa-volume-low"></i>
+                    <input type="range" class="volume-range">
+                    </div>
+                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+                <div class="fullscreen"></div>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
