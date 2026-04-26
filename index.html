@@ -24,7 +24,7 @@
                 </div>
                 <div class="nav-option">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <a href = "#">Search</a>
+                    <span id="searchLink">Search</span>
                 </div>
             </div>
 
@@ -49,7 +49,7 @@
                         <p class="box-p2">
                             It's easy, we'll help you
                         </p>
-                        <button class="badge">
+                        <button class="badge" id="create-playlist-btn">
                             Create playlist
                         </button>
                     </div>
@@ -64,6 +64,7 @@
                             Browse podcasts
                         </button>
                     </div>
+                    <div class="playlist-list" id="playlistList"></div>
                 </div>
             </div>
         </div>
@@ -168,16 +169,16 @@
             </div>
             <div class="player">
                 <div class="player-controls">
-                    <img src="./Assests/player_icon1.png" class="player-control-icon">
-                    <img src="./Assests/player_icon2.png" class="player-control-icon">
-                    <img src="./Assests/player_icon3.png" class="player-control-icon" id="play"style="opacity: 1; height: 2.5rem;">
-                    <img src="./Assests/player_icon4.png" class="player-control-icon">
-                    <img src="./Assests/player_icon5.png" class="player-control-icon">
+                    <img src="./Assests/player_icon1.png" class="player-control-icon" id="shuffle">
+                    <img src="./Assests/player_icon2.png" class="player-control-icon" id="previous">
+                    <img src="./Assests/player_icon3.png" class="player-control-icon" id="play" style="opacity: 1; height: 2.5rem; cursor: pointer;">
+                    <img src="./Assests/player_icon4.png" class="player-control-icon" id="next">
+                    <img src="./Assests/player_icon5.png" class="player-control-icon" id="repeat">
                 </div>
                 <div class="playback-bar">
                     <span class="curr-time">00:00</span>
                     <input type="range" min="0" max="100" class="progress-bar" step="1">
-                    <span class="total-time">3:33</span>
+                    <span class="total-time">0:00</span>
                 </div>
             </div>
             <div class="controls">
@@ -187,7 +188,7 @@
                 <div class="control-right">
                     <div class="inner-volume">
                         <i class="fa-solid fa-volume-low"></i>
-                    <input type="range" class="volume-range">
+                        <input type="range" class="volume-range" min="0" max="100" value="70">
                     </div>
                     <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                 </div>
@@ -195,7 +196,41 @@
             </div>
             
         </div>
-
+        <audio id="audio" preload="metadata"></audio>
     </div>
+
+    <div class="account-modal hidden" id="accountModal">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-panel">
+            <button class="modal-close" id="accountClose">×</button>
+            <div class="modal-header">
+                <button class="tab-button active" id="loginTab">Login</button>
+                <button class="tab-button" id="signupTab">Sign Up</button>
+            </div>
+            <div class="modal-content">
+                <form id="loginForm" class="modal-form active">
+                    <h3>Login to your account</h3>
+                    <label for="loginId">Email or username</label>
+                    <input type="text" id="loginId" placeholder="Enter email or username" required>
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter password" required>
+                    <button type="submit" class="modal-submit">Login</button>
+                </form>
+                <form id="signupForm" class="modal-form">
+                    <h3>Create your account</h3>
+                    <label for="signupName">Name</label>
+                    <input type="text" id="signupName" placeholder="Enter your name" required>
+                    <label for="signupPhone">Phone number</label>
+                    <input type="tel" id="signupPhone" placeholder="Enter phone number" required>
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" placeholder="Enter email" required>
+                    <label for="signupPassword">New password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password" required>
+                    <button type="submit" class="modal-submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
